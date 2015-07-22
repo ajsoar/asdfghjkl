@@ -11,7 +11,7 @@ import Foundation
 class Ledge: CCSprite {
     //weak var ledge: CCNode!
     
-    let minimumLedgePositionY: CGFloat = 50
+    let minimumLedgePositionY: CGFloat = 80
     let maximumLedgePositionY: CGFloat = 250
     
     func setRandomPosition() {

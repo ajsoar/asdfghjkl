@@ -34,4 +34,17 @@ class GameOver: CCNode {
         bestScoreNumber.string = "\(currentBestScore)"
     }
     
+    //restart game
+    func restart () {
+        let scene = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
+    
+    // bring back to Main Menu screen
+    func mainMenu() {
+        let scene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
+    
+    
 }
