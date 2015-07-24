@@ -22,4 +22,9 @@ class Character: CCSprite {
 //        self.physicsBody.applyImpulse(ccp(0,900))
         self.physicsBody.velocity.y = 500
     }
+    
+    func fallDown() {
+//        self.runAction(CCActionMoveBy(duration: 0.10, position: ccp (0,-100)))
+        self.physicsBody.velocity.y = -300
+    }
 }

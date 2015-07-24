@@ -22,16 +22,16 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var ceiling2: CCNode!
     var ceilings = [CCNode]()
     
-    weak var resumeButton: CCButton!
-    weak var pauseButton: CCButton!
+    weak var resumeButton: CCSprite!
+    weak var pauseButton: CCSprite!
     
     var sinceTouch: CCTime = 0
-    var scrollSpeed: CGFloat = 80
+    var scrollSpeed: CGFloat = 0
     var points: Int = 0
     var gameOver = false
     
     var ledges: [CCNode] = []
-    let firstLedgePosition: CGFloat = 650
+    let firstLedgePosition: CGFloat = 360
     let distanceBetweenLedges: CGFloat = 150
     var dies = [CCNode]()
     
@@ -39,7 +39,6 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     func didLoadFromCCB(){
         userInteractionEnabled = true
-        pauseButton.visible = true
         //        gamePhysicsNode.debugDraw = true
         dies.append(die1)
         dies.append(die2)
@@ -61,6 +60,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         if (gameOver == false) {
             jumpLimit()
             sinceTouch = 0
+            scrollSpeed = 80
+            pauseButton.visible = true
         }
     }
     
@@ -132,7 +133,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             character.jump()
             character.state = .JumpedTwice
         case .JumpedTwice:
-            break
+            character.fallDown()
+//            break
         }
         
     }
@@ -147,7 +149,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         scoreLabel.string = String(points)
         resetJump()
         gamePhysicsNode.space.addPostStepBlock({ () -> Void in
-            ledge.runAction(CCActionMoveBy(duration: 1.5, position: ccp (0,-200)))
+            ledge.runAction(CCActionMoveBy(duration: 0.5, position: ccp (0,-300)))
             }, key: ledge)
         
         scoreLabel.visible = true

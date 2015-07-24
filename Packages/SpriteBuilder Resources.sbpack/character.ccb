@@ -35,6 +35,67 @@
 	<false/>
 	<key>nodeGraph</key>
 	<dict>
+		<key>animatedProperties</key>
+		<dict>
+			<key>0</key>
+			<dict>
+				<key>opacity</key>
+				<dict>
+					<key>keyframes</key>
+					<array>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>1</integer>
+							</dict>
+							<key>name</key>
+							<string>opacity</string>
+							<key>time</key>
+							<real>0.0</real>
+							<key>type</key>
+							<integer>10</integer>
+							<key>value</key>
+							<real>1</real>
+						</dict>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>1</integer>
+							</dict>
+							<key>name</key>
+							<string>opacity</string>
+							<key>time</key>
+							<real>1</real>
+							<key>type</key>
+							<integer>10</integer>
+							<key>value</key>
+							<real>0.40000000596046448</real>
+						</dict>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>1</integer>
+							</dict>
+							<key>name</key>
+							<string>opacity</string>
+							<key>time</key>
+							<real>2</real>
+							<key>type</key>
+							<integer>10</integer>
+							<key>value</key>
+							<real>1</real>
+						</dict>
+					</array>
+					<key>name</key>
+					<string>opacity</string>
+					<key>type</key>
+					<integer>10</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
@@ -52,9 +113,9 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<false/>
+			<true/>
 			<key>bodyShape</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>collisionCategories</key>
 			<array/>
 			<key>collisionMask</key>
@@ -62,7 +123,7 @@
 			<key>collisionType</key>
 			<string>character</string>
 			<key>cornerRadius</key>
-			<real>0.0</real>
+			<real>26.1484375</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -74,43 +135,12 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<array>
-					<real>23.020896911621094</real>
-					<real>67.235008239746094</real>
-				</array>
-				<array>
-					<real>41.70703125</real>
-					<real>66.52734375</real>
-				</array>
-				<array>
-					<real>50.84375</real>
-					<real>0.0234527587890625</real>
+					<real>31.61328125</real>
+					<real>30.191421508789062</real>
 				</array>
 			</array>
 			<key>polygons</key>
-			<array>
-				<array>
-					<array>
-						<real>50.84375</real>
-						<real>0.0234527587890625</real>
-					</array>
-					<array>
-						<real>41.70703125</real>
-						<real>66.52734375</real>
-					</array>
-					<array>
-						<real>23.020896911621094</real>
-						<real>67.235008239746094</real>
-					</array>
-					<array>
-						<real>0.0</real>
-						<real>0.0</real>
-					</array>
-				</array>
-			</array>
+			<array/>
 		</dict>
 		<key>properties</key>
 		<array>
@@ -168,7 +198,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>stickfigure.png</string>
+					<string>Assets/ballcharacter.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -181,6 +211,16 @@
 					<string></string>
 					<string></string>
 				</array>
+			</dict>
+			<dict>
+				<key>baseValue</key>
+				<real>1</real>
+				<key>name</key>
+				<string>opacity</string>
+				<key>type</key>
+				<string>Float</string>
+				<key>value</key>
+				<real>1</real>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -202,8 +242,8 @@
 				<string>Blendmode</string>
 				<key>value</key>
 				<array>
-					<integer>774</integer>
-					<integer>771</integer>
+					<integer>1</integer>
+					<integer>1</integer>
 				</array>
 			</dict>
 			<dict>
@@ -216,6 +256,8 @@
 			</dict>
 		</array>
 		<key>selected</key>
+		<true/>
+		<key>seqExpanded</key>
 		<true/>
 	</dict>
 	<key>notes</key>
@@ -264,15 +306,15 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>2</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>2</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
