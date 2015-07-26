@@ -17,16 +17,15 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var die2: CCNode!
     weak var ground: CCSprite!
     weak var gameplay: CCNode!
+    weak var ledgeForScore: CCSprite!
     
     weak var ceiling1: CCNode!
     weak var ceiling2: CCNode!
     var ceilings = [CCNode]()
     
-    weak var resumeButton: CCSprite!
     weak var pauseButton: CCSprite!
     
-    var sinceTouch: CCTime = 0
-    var scrollSpeed: CGFloat = 0
+    var scrollSpeed: CGFloat = 1
     var points: Int = 0
     var gameOver = false
     
@@ -37,9 +36,20 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     weak var scoreLabel: CCLabelTTF!
     
+    weak var pausedTitle: CCLabelTTF!
+    weak var retry: CCSprite!
+    weak var retryButton: CCSprite!
+    weak var home: CCSprite!
+    weak var homeButton: CCButton!
+    weak var resumeButton: CCButton!
+    weak var resumeIcon: CCSprite!
+    weak var settings: CCSprite!
+    weak var shop: CCSprite!
+    
     func didLoadFromCCB(){
         userInteractionEnabled = true
-        //        gamePhysicsNode.debugDraw = true
+        pauseButton.visible = true
+        //gamePhysicsNode.debugDraw = true
         dies.append(die1)
         dies.append(die2)
         ceilings.append(ceiling1)
@@ -59,21 +69,20 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
         if (gameOver == false) {
             jumpLimit()
-            sinceTouch = 0
-            scrollSpeed = 80
-            pauseButton.visible = true
+            
         }
     }
     
     //movement between world and character
-    override func update(delta: CCTime) {
+    override func update(currentTime: CFTimeInterval) {
+
+        //sinceTouch += delta
         
-        sinceTouch += delta
-        
-        character.position = ccp(character.position.x + scrollSpeed * CGFloat(delta), character.position.y)
-        gamePhysicsNode.position = ccp(gamePhysicsNode.position.x - scrollSpeed * CGFloat(delta), gamePhysicsNode.position.y)
+        character.position = CGPoint(x: character.position.x + scrollSpeed, y: character.position.y)
+        gamePhysicsNode.position = CGPoint(x: gamePhysicsNode.position.x - scrollSpeed, y: gamePhysicsNode.position.y)
         let velocityY = clampf(Float(character.physicsBody.velocity.y), -Float(CGFloat.max), 300)
         character.physicsBody.velocity = ccp(0, CGFloat(velocityY))
+        scrollSpeed *= 1.0005
         
         for ledge in ledges.reverse() {
             let ledgeWorldPosition = gamePhysicsNode.convertToWorldSpace(ledge.position)
@@ -86,6 +95,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
                 
                 spawnNewLedge()
             }
+            
         }
         
         //loop for the bottom game over
@@ -93,7 +103,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             let dieWorldPosition = gamePhysicsNode.convertToWorldSpace(die.position)
             let dieScreenPosition = convertToNodeSpace(dieWorldPosition)
             if dieScreenPosition.x <= (-die.contentSize.width) {
-                die.position = ccp(die.position.x + die.contentSize.width * 2, die.position.y)
+                die.position = CGPoint(x: die.position.x + scrollSpeed, y: die.position.y)
+
             }
         }
         
@@ -102,7 +113,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             let ceilingWorldPosition = gamePhysicsNode.convertToWorldSpace(ceiling.position)
             let ceilingScreenPosition = convertToNodeSpace(ceilingWorldPosition)
             if ceilingScreenPosition.x <= (-ceiling.contentSize.width) {
-                ceiling.position = ccp(ceiling.position.x + ceiling.contentSize.width * 2, ceiling.position.y)
+                ceiling.position = CGPoint(x: ceiling.position.x + scrollSpeed, y: ceiling.position.y)
             }
         }
     }
@@ -153,11 +164,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             }, key: ledge)
         
         scoreLabel.visible = true
+        ledgeForScore.visible = true
         
         return true
     }
     
-    //collision of the bottom node for game over and character to trigger the game over
+//    collision of the bottom node for game over and character to trigger the game over
     func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, dead: CCNode!) -> Bool {
         triggerGameOver()
         return true
@@ -171,16 +183,43 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     //pause game
     func pause() {
         gameplay.paused = true
-        resumeButton.visible = true
         pauseButton.visible = false
-        
+        resumeButton.visible = true
+        resumeIcon.visible = true
+        pausedTitle.visible = true
+        retry.visible = true
+        retryButton.visible = true
+        home.visible = true
+        homeButton.visible = true
+        settings.visible = true
+        shop.visible = true
+
     }
     
     func resume() {
         gameplay.paused = false
-        resumeButton.visible = false
         pauseButton.visible = true
-
+        resumeButton.visible = false
+        resumeIcon.visible = false
+        pausedTitle.visible = false
+        retry.visible = false
+        retryButton.visible = false
+        home.visible = false
+        homeButton.visible = false
+        settings.visible = false
+        shop.visible = false
+    }
+    
+    
+    //restart game
+    func restart() {
+        let scene = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
+    
+    func main() {
+        let scene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(scene)
     }
     
     //starts with the gameOver thing
@@ -190,6 +229,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             pauseButton.visible = false
             scrollSpeed = 0
             scoreLabel.visible = false
+            ledgeForScore.visible = false
             
             character.stopAllActions()
             
