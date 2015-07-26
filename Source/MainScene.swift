@@ -6,4 +6,9 @@ class MainScene: CCNode {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    
+    func settings() {
+        let scene  = CCBReader.loadAsScene("Settings")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
 }

@@ -44,6 +44,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var resumeButton: CCButton!
     weak var resumeIcon: CCSprite!
     weak var settings: CCSprite!
+    weak var settingsButton: CCButton!
     weak var shop: CCSprite!
     
     func didLoadFromCCB(){
@@ -180,6 +181,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         return true
     }
     
+    
+    func openSettings() {
+        let scene  = CCBReader.loadAsScene("Settings")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
+    
     //pause game
     func pause() {
         gameplay.paused = true
@@ -192,6 +199,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         home.visible = true
         homeButton.visible = true
         settings.visible = true
+        settingsButton.visible = true
         shop.visible = true
 
     }
@@ -207,6 +215,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         home.visible = false
         homeButton.visible = false
         settings.visible = false
+        settingsButton.visible = false
         shop.visible = false
     }
     
