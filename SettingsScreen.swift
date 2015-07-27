@@ -11,7 +11,6 @@ import Foundation
 class Settings: CCNode {
     
     enum sounds {
-        case open
         case yesSound
         case noSound
     }
@@ -19,7 +18,7 @@ class Settings: CCNode {
     weak var sound: CCSprite!
     weak var mute: CCSprite!
     
-    var state: sounds = .open
+    var state: sounds = .yesSound
     
     func muting() {
         sound.visible = false
@@ -33,9 +32,6 @@ class Settings: CCNode {
     
     func muteAndSound() {
         switch (state) {
-        case .open:
-            sound.visible = true
-            state = .yesSound
         case .yesSound:
             music()
             state = .noSound

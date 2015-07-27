@@ -83,7 +83,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         gamePhysicsNode.position = CGPoint(x: gamePhysicsNode.position.x - scrollSpeed, y: gamePhysicsNode.position.y)
         let velocityY = clampf(Float(character.physicsBody.velocity.y), -Float(CGFloat.max), 300)
         character.physicsBody.velocity = ccp(0, CGFloat(velocityY))
-        scrollSpeed *= 1.00073
+        scrollSpeed *= 1.0003
         
         for ledge in ledges.reverse() {
             let ledgeWorldPosition = gamePhysicsNode.convertToWorldSpace(ledge.position)
@@ -227,7 +227,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     }
     
     func openSettings() {
-        let scene  = CCBReader.loadAsScene("Settings")
+        let scene = CCBReader.loadAsScene("Settings")
         CCDirector.sharedDirector().presentScene(scene)
     }
     
