@@ -65,7 +65,7 @@
 		A08155D51B5990BC00968569 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08155D41B5990BC00968569 /* Character.swift */; };
 		A0EF40C31B62B8B500A07195 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40C21B62B8B500A07195 /* Gameplay.swift */; };
 		A0EF40C71B62D03300A07195 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40C61B62D03300A07195 /* SettingsScreen.swift */; };
-		A0EF40CB1B647BB100A07195 /* PauseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40CA1B647BB100A07195 /* PauseMenu.swift */; };
+		A0EF40D71B66F2AE00A07195 /* Stellardrone - Blinking Star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40D61B66F2AE00A07195 /* Stellardrone - Blinking Star.mp3 */; };
 		A0F8626B1B54390D00840A60 /* Ledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8626A1B54390D00840A60 /* Ledge.swift */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -182,7 +182,7 @@
 		A08155D41B5990BC00968569 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A0EF40C21B62B8B500A07195 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		A0EF40C61B62D03300A07195 /* SettingsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
-		A0EF40CA1B647BB100A07195 /* PauseMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseMenu.swift; sourceTree = "<group>"; };
+		A0EF40D61B66F2AE00A07195 /* Stellardrone - Blinking Star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stellardrone - Blinking Star.mp3"; sourceTree = "<group>"; };
 		A0F8626A1B54390D00840A60 /* Ledge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ledge.swift; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -481,7 +481,6 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
-				A0EF40CA1B647BB100A07195 /* PauseMenu.swift */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -532,6 +531,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A0EF40D61B66F2AE00A07195 /* Stellardrone - Blinking Star.mp3 */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B12100D197483EE004C1E1D /* res */,
 				B73789911807667A0076A88C /* Icons */,
@@ -626,6 +626,7 @@
 						CreatedOnToolsVersion = 6.0.1;
 					};
 					B77F1B2D17B978D7009739AE = {
+						DevelopmentTeam = FNPKPNMLFC;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -745,6 +746,7 @@
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
+				A0EF40D71B66F2AE00A07195 /* Stellardrone - Blinking Star.mp3 in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
@@ -833,7 +835,6 @@
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				A0EF40C31B62B8B500A07195 /* Gameplay.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
-				A0EF40CB1B647BB100A07195 /* PauseMenu.swift in Sources */,
 				A08155D51B5990BC00968569 /* Character.swift in Sources */,
 				A080ED231B56C54F00F3AE45 /* GameOver.swift in Sources */,
 				A0F8626B1B54390D00840A60 /* Ledge.swift in Sources */,
