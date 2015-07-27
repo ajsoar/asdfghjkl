@@ -1849,8 +1849,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -3941,8 +3939,8 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>settings</string>
-							<integer>1</integer>
+							<string>openSettings</string>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -4228,6 +4226,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

@@ -11,14 +11,15 @@ import Foundation
 class Settings: CCNode {
     
     enum sounds {
-        case yes
-        case no
+        case open
+        case yesSound
+        case noSound
     }
     
     weak var sound: CCSprite!
     weak var mute: CCSprite!
     
-    var state: sounds = .yes
+    var state: sounds = .open
     
     func muting() {
         sound.visible = false
@@ -32,13 +33,21 @@ class Settings: CCNode {
     
     func muteAndSound() {
         switch (state) {
-        case .yes:
+        case .open:
+            sound.visible = true
+            state = .yesSound
+        case .yesSound:
             music()
-            state = .no
-        case .no:
+            state = .noSound
+        case .noSound:
             muting()
-            state = .yes
+            state = .yesSound
         }
+    }
+    
+    func back() {
+        let scene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(scene)
     }
     
     

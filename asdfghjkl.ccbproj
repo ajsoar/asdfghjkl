@@ -78,6 +78,11 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>Assets/back.png</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+		</dict>
 		<key>Sprites</key>
 		<dict/>
 		<key>ccbResources</key>
