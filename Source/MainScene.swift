@@ -3,9 +3,8 @@ import Foundation
 class MainScene: CCNode {
     
     func didLoadFromCCB() {
-        OALSimpleAudio.sharedInstance().playBg("Resources/Stellardrone - Blinking Star.mp3", loop: true)
-//        OALSimpleAudio.sharedInstance().preloadBg("Resources/Stellardrone - Blinking Star.mp3")
-//        OALSimpleAudio.sharedInstance().playBgWithLoop(true)
+        OALSimpleAudio.sharedInstance().playBg("StellarDrone.mp3")
+        OALSimpleAudio.sharedInstance().playBgWithLoop(true)
     }
     
     func start() {
@@ -17,4 +16,5 @@ class MainScene: CCNode {
         let scene  = CCBReader.loadAsScene("Settings")
         CCDirector.sharedDirector().presentScene(scene)
     }
+
 }

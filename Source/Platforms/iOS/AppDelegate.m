@@ -54,6 +54,8 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
+    //[OALSimpleAudio sharedInstance];
+    
     return YES;
 }
 
