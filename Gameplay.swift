@@ -166,6 +166,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
         scoreLabel.visible = true
         ledgeForScore.visible = true
+        OALSimpleAudio.sharedInstance().playEffect("sonar.WAV")
         
         return true
     }
@@ -178,6 +179,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, ground: CCSprite!) -> Bool {
         resetJump()
+        OALSimpleAudio.sharedInstance().playEffect("sonar.WAV")
         return true
     }
     
