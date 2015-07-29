@@ -213,8 +213,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>3</real>
+							<real>3</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -513,6 +513,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -701,8 +703,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.49333333969116211</real>
+							<real>0.49333333969116211</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -737,7 +739,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>1</real>
+						<real>0.93999993801116943</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -749,7 +751,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>1</real>
+							<real>0.93999993801116943</real>
 						</array>
 					</dict>
 					<dict>
@@ -929,7 +931,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>1</real>
+						<real>0.95333331823348999</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -941,7 +943,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>1</real>
+							<real>0.95333331823348999</real>
 						</array>
 					</dict>
 					<dict>
@@ -999,8 +1001,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.054999999701976776</real>
-							<real>0.10000000149011612</real>
+							<real>0.070000000298023224</real>
+							<real>0.070000000298023224</real>
 							<integer>3</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1024,11 +1026,19 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.33311185240745544</real>
-							<real>0.32749137282371521</real>
+							<real>0.20999999344348907</real>
+							<real>0.20999999344348907</real>
 							<false/>
 							<integer>0</integer>
 						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>rotation</string>
+						<key>type</key>
+						<string>Degrees</string>
+						<key>value</key>
+						<real>-0.5</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1038,7 +1048,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/settings.png</string>
+							<string>Assets/settings2.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1356,7 +1366,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.054999999701976776</real>
+							<real>0.059999998658895493</real>
 							<real>0.10000000149011612</real>
 							<integer>3</integer>
 							<integer>2</integer>
@@ -2018,7 +2028,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-180</real>
+						<real>-192.00001525878906</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2050,7 +2060,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.0</real>
+						<real>0.066666722297668457</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2062,7 +2072,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>0.0</real>
+							<real>0.066666722297668457</real>
 						</array>
 					</dict>
 					<dict>
@@ -2085,8 +2095,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -2228,9 +2236,9 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>0.21516716480255127</real>
 			<key>position</key>
-			<real>1</real>
+			<real>1.0666667222976685</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

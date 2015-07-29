@@ -194,7 +194,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.49000000953674316</real>
 							<real>0.5</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -233,7 +233,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/no sound.png</string>
+							<string>Assets/mute.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -399,6 +399,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -876,8 +878,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -911,11 +911,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>72</real>
-							<real>45</real>
+							<real>0.090000003576278687</real>
+							<real>0.090000003576278687</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>

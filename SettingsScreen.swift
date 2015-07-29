@@ -21,15 +21,15 @@ class Settings: CCNode {
     var state: sounds = .yesSound
     
     func muting() {
-        sound.visible = false
         mute.visible = true
+        sound.opacity = 0.5
         OALSimpleAudio.sharedInstance().effectsMuted = true
         OALSimpleAudio.sharedInstance().bgMuted = true
     }
     
     func music() {
-        sound.visible = true
         mute.visible = false
+        sound.opacity = 1.0
         OALSimpleAudio.sharedInstance().effectsMuted = false
         OALSimpleAudio.sharedInstance().bgMuted = false
     }
