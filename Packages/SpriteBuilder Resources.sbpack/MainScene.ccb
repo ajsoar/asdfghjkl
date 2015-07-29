@@ -513,8 +513,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -703,8 +701,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.49333333969116211</real>
-							<real>0.49333333969116211</real>
+							<real>0.47333332896232605</real>
+							<real>0.47333332896232605</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -739,7 +737,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.93999993801116943</real>
+						<real>0.76000005006790161</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -751,7 +749,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>0.93999993801116943</real>
+							<real>0.76000005006790161</real>
 						</array>
 					</dict>
 					<dict>
@@ -931,7 +929,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.95333331823348999</real>
+						<real>0.81333333253860474</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -943,7 +941,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>0.95333331823348999</real>
+							<real>0.81333333253860474</real>
 						</array>
 					</dict>
 					<dict>
@@ -1835,7 +1833,7 @@
 									<key>type</key>
 									<integer>10</integer>
 									<key>value</key>
-									<real>1</real>
+									<real>0.5</real>
 								</dict>
 								<dict>
 									<key>easing</key>
@@ -1865,7 +1863,7 @@
 									<key>type</key>
 									<integer>10</integer>
 									<key>value</key>
-									<real>1</real>
+									<real>0.5</real>
 								</dict>
 							</array>
 							<key>name</key>
@@ -1989,8 +1987,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.30000001192092896</real>
+							<real>0.49799999594688416</real>
+							<real>0.31000000238418579</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -2028,7 +2026,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-192.00001525878906</real>
+						<real>-132</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2060,7 +2058,7 @@
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.066666722297668457</real>
+						<real>0.13333332538604736</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2072,7 +2070,7 @@
 							<real>1</real>
 							<real>1</real>
 							<real>1</real>
-							<real>0.066666722297668457</real>
+							<real>0.13333332538604736</real>
 						</array>
 					</dict>
 					<dict>
@@ -2236,9 +2234,9 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.21516716480255127</real>
+			<real>0.0</real>
 			<key>position</key>
-			<real>1.0666667222976685</real>
+			<real>0.73333334922790527</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
