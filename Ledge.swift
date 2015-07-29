@@ -19,7 +19,7 @@ class Ledge: CCSprite {
         let random = CGFloat(arc4random_uniform(randomPrecision)) / CGFloat(randomPrecision)
         let range = maximumLedgePositionY - minimumLedgePositionY + random
         position = ccp(positionInPoints.x, minimumLedgePositionY + (random * range))
-        
+        //I HOPE YOU SHORT CIRCUIT
     }
     
 }
