@@ -66,7 +66,8 @@
 		A0EF40C31B62B8B500A07195 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40C21B62B8B500A07195 /* Gameplay.swift */; };
 		A0EF40C71B62D03300A07195 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40C61B62D03300A07195 /* SettingsScreen.swift */; };
 		A0EF40E71B67FF5800A07195 /* StellarDrone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40E61B67FF5800A07195 /* StellarDrone.mp3 */; };
-		A0EF40ED1B68075E00A07195 /* sonar.WAV in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40EC1B68075E00A07195 /* sonar.WAV */; };
+		A0EF40EF1B68864800A07195 /* thud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40EE1B68864800A07195 /* thud.mp3 */; };
+		A0EF40F31B6889E300A07195 /* open.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40F21B6889E300A07195 /* open.wav */; };
 		A0F8626B1B54390D00840A60 /* Ledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8626A1B54390D00840A60 /* Ledge.swift */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -184,7 +185,8 @@
 		A0EF40C21B62B8B500A07195 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		A0EF40C61B62D03300A07195 /* SettingsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		A0EF40E61B67FF5800A07195 /* StellarDrone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StellarDrone.mp3; sourceTree = "<group>"; };
-		A0EF40EC1B68075E00A07195 /* sonar.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sonar.WAV; sourceTree = "<group>"; };
+		A0EF40EE1B68864800A07195 /* thud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thud.mp3; sourceTree = "<group>"; };
+		A0EF40F21B6889E300A07195 /* open.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open.wav; sourceTree = "<group>"; };
 		A0F8626A1B54390D00840A60 /* Ledge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ledge.swift; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -534,7 +536,8 @@
 			isa = PBXGroup;
 			children = (
 				A0EF40E61B67FF5800A07195 /* StellarDrone.mp3 */,
-				A0EF40EC1B68075E00A07195 /* sonar.WAV */,
+				A0EF40EE1B68864800A07195 /* thud.mp3 */,
+				A0EF40F21B6889E300A07195 /* open.wav */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B12100D197483EE004C1E1D /* res */,
 				B73789911807667A0076A88C /* Icons */,
@@ -749,13 +752,14 @@
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
+				A0EF40F31B6889E300A07195 /* open.wav in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				A0EF40E71B67FF5800A07195 /* StellarDrone.mp3 in Resources */,
-				A0EF40ED1B68075E00A07195 /* sonar.WAV in Resources */,
+				A0EF40EF1B68864800A07195 /* thud.mp3 in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,

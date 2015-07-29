@@ -20,6 +20,8 @@ class GameOver: CCNode {
     
     func didLoadFromCCB() {
         updateBestScore()
+        OALSimpleAudio.sharedInstance().playEffect("thud.mp3")
+        OALSimpleAudio.sharedInstance().effectsVolume = 0.5
     }
     
     func updateBestScore() {

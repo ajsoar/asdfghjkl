@@ -10,6 +10,8 @@ class MainScene: CCNode {
     func start() {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)
+        OALSimpleAudio.sharedInstance().playEffect("open.wav")
+        OALSimpleAudio.sharedInstance().effectsVolume = 0.05
     }
     
     func settings() {
