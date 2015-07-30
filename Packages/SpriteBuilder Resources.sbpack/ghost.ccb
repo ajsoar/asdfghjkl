@@ -278,7 +278,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Assets/ghost character.png</string>
+					<string>characters/ghost character.png</string>
 				</array>
 			</dict>
 			<dict>

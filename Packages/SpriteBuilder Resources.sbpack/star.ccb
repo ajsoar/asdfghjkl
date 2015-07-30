@@ -98,12 +98,8 @@
 					<real>163.08596801757812</real>
 				</array>
 				<array>
-					<real>218.0390625</real>
-					<real>152.64456176757812</real>
-				</array>
-				<array>
-					<real>174.08203125</real>
-					<real>108.68751525878906</real>
+					<real>215.765625</real>
+					<real>152.55862426757812</real>
 				</array>
 				<array>
 					<real>183.59765625</real>
@@ -118,16 +114,16 @@
 			<array>
 				<array>
 					<array>
+						<real>81.6171875</real>
+						<real>113.99220275878906</real>
+					</array>
+					<array>
+						<real>73.11328125</real>
+						<real>52.097671508789062</real>
+					</array>
+					<array>
 						<real>127.765625</real>
 						<real>78.792984008789062</real>
-					</array>
-					<array>
-						<real>183.59765625</real>
-						<real>53.10546875</real>
-					</array>
-					<array>
-						<real>174.08203125</real>
-						<real>108.68751525878906</real>
 					</array>
 				</array>
 				<array>
@@ -157,35 +153,21 @@
 						<real>81.6171875</real>
 						<real>113.99220275878906</real>
 					</array>
-				</array>
-				<array>
-					<array>
-						<real>81.6171875</real>
-						<real>113.99220275878906</real>
-					</array>
-					<array>
-						<real>73.11328125</real>
-						<real>52.097671508789062</real>
-					</array>
 					<array>
 						<real>127.765625</real>
 						<real>78.792984008789062</real>
 					</array>
 					<array>
-						<real>174.08203125</real>
-						<real>108.68751525878906</real>
+						<real>183.59765625</real>
+						<real>53.10546875</real>
 					</array>
 					<array>
-						<real>218.0390625</real>
-						<real>152.64456176757812</real>
+						<real>215.765625</real>
+						<real>152.55862426757812</real>
 					</array>
 					<array>
 						<real>157.41015625</real>
 						<real>163.08596801757812</real>
-					</array>
-					<array>
-						<real>103.17578125</real>
-						<real>163.92971801757812</real>
 					</array>
 				</array>
 			</array>
@@ -246,7 +228,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Assets/star character.png</string>
+					<string>characters/star character.png</string>
 				</array>
 			</dict>
 			<dict>
