@@ -999,8 +999,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.070000000298023224</real>
-							<real>0.070000000298023224</real>
+							<real>0.059999998658895493</real>
+							<real>0.090000003576278687</real>
 							<integer>3</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1024,8 +1024,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>0.20999999344348907</real>
-							<real>0.20999999344348907</real>
+							<real>0.37999999523162842</real>
+							<real>0.37999999523162842</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1046,7 +1046,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Assets/settings2.png</string>
+							<string>Assets/new settings na talaga ito.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1342,7 +1342,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>settings</string>
+				<string>settings button</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -1689,6 +1689,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

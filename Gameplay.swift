@@ -67,6 +67,19 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
     }
     
+    override func onEnter() {
+        super.onEnter()
+        
+        let character = Gamestate.sharedInstance.characterType
+        var node = CCBReader.load("\(character.rawValue)") as! Character
+        node.position = ccp(100,300)
+        gamePhysicsNode.removeChild(self.character)
+        gamePhysicsNode.addChild(node)
+        self.character = node
+        node.scaleX = 0.3
+        node.scaleY = 0.3
+    }
+    
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
         if (gameOver == false) {
             jumpLimit()

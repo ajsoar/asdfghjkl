@@ -8,7 +8,15 @@
 
 import Foundation
 
-class Settings: CCNode {
+class SettingsScreen: CCNode {
+    
+    weak var circle: CCSprite!
+    weak var triangle: CCSprite!
+    weak var square: CCSprite!
+    weak var diamond: CCSprite!
+    weak var pentagon: CCSprite!
+    weak var star: CCSprite!
+    weak var ghost: CCSprite!
     
     enum sounds {
         case yesSound
@@ -50,5 +58,32 @@ class Settings: CCNode {
         CCDirector.sharedDirector().presentScene(scene)
     }
     
+    func selectCircle() {
+        Gamestate.sharedInstance.characterType = .Circle
+    }
     
+    func selectTriangle() {
+        Gamestate.sharedInstance.characterType = .Triangle
+    }
+    
+    func selectSquare() {
+        Gamestate.sharedInstance.characterType = .Square
+    }
+    
+    func selectDiamond() {
+        Gamestate.sharedInstance.characterType = .Diamond
+    }
+    
+    func selectPentagon() {
+        Gamestate.sharedInstance.characterType = .Pentagon
+    }
+    
+    func selectStar() {
+        Gamestate.sharedInstance.characterType = .Star
+    }
+    
+    func selectGhost() {
+        Gamestate.sharedInstance.characterType = .Ghost
+        
+    }
 }

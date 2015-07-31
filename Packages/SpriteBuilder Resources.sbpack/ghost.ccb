@@ -40,7 +40,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string></string>
+		<string>Character</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -52,7 +52,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<true/>
+			<false/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -60,7 +60,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>character</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -110,75 +110,39 @@
 					<real>40.22265625</real>
 				</array>
 				<array>
-					<real>172.23046875</real>
-					<real>50.49609375</real>
+					<real>154.0078125</real>
+					<real>39.98828125</real>
 				</array>
 				<array>
-					<real>152.01953125</real>
-					<real>39.2109375</real>
-				</array>
-				<array>
-					<real>132.98828125</real>
-					<real>49.06640625</real>
-				</array>
-				<array>
-					<real>116.90234375</real>
-					<real>41.234375</real>
-				</array>
-				<array>
-					<real>89.28125</real>
-					<real>49.82421875</real>
+					<real>118.39453125</real>
+					<real>39.68359375</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>70.3359375</real>
-						<real>142.62110900878906</real>
-					</array>
-					<array>
 						<real>70.671875</real>
 						<real>40.22265625</real>
 					</array>
 					<array>
-						<real>89.28125</real>
-						<real>49.82421875</real>
+						<real>118.39453125</real>
+						<real>39.68359375</real>
+					</array>
+					<array>
+						<real>154.0078125</real>
+						<real>39.98828125</real>
 					</array>
 				</array>
 				<array>
 					<array>
-						<real>70.3359375</real>
-						<real>142.62110900878906</real>
-					</array>
-					<array>
-						<real>89.28125</real>
-						<real>49.82421875</real>
-					</array>
-					<array>
-						<real>116.90234375</real>
-						<real>41.234375</real>
-					</array>
-					<array>
-						<real>132.98828125</real>
-						<real>49.06640625</real>
-					</array>
-				</array>
-				<array>
-					<array>
-						<real>172.23046875</real>
-						<real>50.49609375</real>
+						<real>154.0078125</real>
+						<real>39.98828125</real>
 					</array>
 					<array>
 						<real>195.13671875</real>
 						<real>40.22265625</real>
 					</array>
-					<array>
-						<real>195.9765625</real>
-						<real>144.72657775878906</real>
-					</array>
-				</array>
-				<array>
 					<array>
 						<real>195.9765625</real>
 						<real>144.72657775878906</real>
@@ -208,16 +172,8 @@
 						<real>142.62110900878906</real>
 					</array>
 					<array>
-						<real>132.98828125</real>
-						<real>49.06640625</real>
-					</array>
-					<array>
-						<real>152.01953125</real>
-						<real>39.2109375</real>
-					</array>
-					<array>
-						<real>172.23046875</real>
-						<real>50.49609375</real>
+						<real>70.671875</real>
+						<real>40.22265625</real>
 					</array>
 				</array>
 			</array>
