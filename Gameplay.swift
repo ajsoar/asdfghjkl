@@ -17,7 +17,6 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var die2: CCNode!
     weak var ground: CCSprite!
     weak var gameplay: CCNode!
-    weak var ledgeForScore: CCSprite!
     
     weak var ceiling1: CCNode!
     weak var ceiling2: CCNode!
@@ -61,7 +60,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     func didLoadFromCCB(){
         userInteractionEnabled = true
         pauseButton.visible = true
-        gamePhysicsNode.debugDraw = true
+        //gamePhysicsNode.debugDraw = true
         dies.append(die1)
         dies.append(die2)
         ceilings.append(ceiling1)
@@ -83,7 +82,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
         let character = Gamestate.sharedInstance.characterType
         var node = CCBReader.load("\(character.rawValue)") as! Character
-        node.position = ccp(100, 300)
+        node.position = ccp(100, 200)
         gamePhysicsNode.removeChild(self.character)
         gamePhysicsNode.addChild(node)
         self.character = node
@@ -188,7 +187,6 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             }, key: ledge)
         
         scoreLabel.visible = true
-        ledgeForScore.visible = true
         
         return true
     }
@@ -282,7 +280,6 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             pauseButton.visible = false
             scrollSpeed = 0
             scoreLabel.visible = false
-            ledgeForScore.visible = false
             
             character.stopAllActions()
             

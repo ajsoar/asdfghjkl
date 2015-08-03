@@ -18,5 +18,17 @@ class MainScene: CCNode {
         let scene  = CCBReader.loadAsScene("Settings")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    
+//    func likeUsOnFB() {
+//        var fbURL: NSURL = NSURL(string: "https://www.facebook.com/DoubleUpApp")
+//        var fbID: NSURL = NSURL(string: "fb://profile/1480465085580488")
+//        
+//        if (UIApplication.sharedApplication().canOpenURL(fbID)) {
+//            UIApplication.sharedApplication().canOpenURL(fbID)
+//        } else {
+//            UIApplication.sharedApplication().canOpenURL(fbURL)
+//        }
+//        
+//    }
 
 }

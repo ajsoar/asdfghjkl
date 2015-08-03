@@ -74,48 +74,48 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>6.4103107452392578</real>
-					<real>2.9634628295898438</real>
+					<real>3.3616549968719482</real>
+					<real>1.5805531740188599</real>
 				</array>
 				<array>
-					<real>3.0076098442077637</real>
-					<real>10.563694000244141</real>
+					<real>0.29658874869346619</real>
+					<real>11.665202140808105</real>
 				</array>
 				<array>
-					<real>9.5662508010864258</real>
-					<real>14.84174633026123</real>
+					<real>10.300378799438477</real>
+					<real>18.912202835083008</real>
 				</array>
 				<array>
-					<real>16.496332168579102</real>
-					<real>11.865032196044922</real>
+					<real>19.710359573364258</real>
+					<real>11.692997932434082</real>
 				</array>
 				<array>
-					<real>13.633907318115234</real>
-					<real>4.2933735847473145</real>
+					<real>16.652873992919922</real>
+					<real>0.90588480234146118</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>13.633907318115234</real>
-						<real>4.2933735847473145</real>
+						<real>16.652873992919922</real>
+						<real>0.90588480234146118</real>
 					</array>
 					<array>
-						<real>16.496332168579102</real>
-						<real>11.865032196044922</real>
+						<real>19.710359573364258</real>
+						<real>11.692997932434082</real>
 					</array>
 					<array>
-						<real>9.5662508010864258</real>
-						<real>14.84174633026123</real>
+						<real>10.300378799438477</real>
+						<real>18.912202835083008</real>
 					</array>
 					<array>
-						<real>3.0076098442077637</real>
-						<real>10.563694000244141</real>
+						<real>0.29658874869346619</real>
+						<real>11.665202140808105</real>
 					</array>
 					<array>
-						<real>6.4103107452392578</real>
-						<real>2.9634628295898438</real>
+						<real>3.3616549968719482</real>
+						<real>1.5805531740188599</real>
 					</array>
 				</array>
 			</array>
@@ -176,7 +176,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>characters/star character.png</string>
+					<string>Characters resized/star character.png</string>
 				</array>
 			</dict>
 			<dict>
