@@ -21,7 +21,7 @@ class MainScene: CCNode {
     
 //    func likeUsOnFB() {
 //        var fbURL: NSURL = NSURL(string: "https://www.facebook.com/DoubleUpApp")
-//        var fbID: NSURL = NSURL(string: "fb://profile/1480465085580488")
+//        var fbID: NSURL = NSURL(string: "https://www.facebook.com/1480465085580488")
 //        
 //        if (UIApplication.sharedApplication().canOpenURL(fbID)) {
 //            UIApplication.sharedApplication().canOpenURL(fbID)
