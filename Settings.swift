@@ -37,8 +37,7 @@ class Settings: CCNode {
     var state: sounds = .yesSound
     
     func didLoadFromCCB() {
-        squareForCircle.scaleX = 0.4
-        squareForCircle.scaleY = 0.4
+        
     }
     
     func muting() {
@@ -216,4 +215,5 @@ class Settings: CCNode {
         squareForGhost.scaleY = 0.4
         
     }
+    
 }
