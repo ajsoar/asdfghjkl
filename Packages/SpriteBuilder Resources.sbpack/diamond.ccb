@@ -40,7 +40,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string></string>
+		<string>Character</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -52,7 +52,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<true/>
+			<false/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -74,40 +74,40 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>128.609375</real>
-					<real>41.06640625</real>
+					<real>8.4033536911010742</real>
+					<real>2.4265289306640625</real>
 				</array>
 				<array>
-					<real>44.65234375</real>
-					<real>129.99220275878906</real>
+					<real>3.4200637340545654</real>
+					<real>10.465683937072754</real>
 				</array>
 				<array>
-					<real>129.3671875</real>
-					<real>219.50784301757812</real>
+					<real>9.6122102737426758</real>
+					<real>15.716167449951172</real>
 				</array>
 				<array>
-					<real>210.71484375</real>
-					<real>132.68751525878906</real>
+					<real>15.197335243225098</real>
+					<real>9.2023506164550781</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>210.71484375</real>
-						<real>132.68751525878906</real>
+						<real>15.197335243225098</real>
+						<real>9.2023506164550781</real>
 					</array>
 					<array>
-						<real>129.3671875</real>
-						<real>219.50784301757812</real>
+						<real>9.6122102737426758</real>
+						<real>15.716167449951172</real>
 					</array>
 					<array>
-						<real>44.65234375</real>
-						<real>129.99220275878906</real>
+						<real>3.4200637340545654</real>
+						<real>10.465683937072754</real>
 					</array>
 					<array>
-						<real>128.609375</real>
-						<real>41.06640625</real>
+						<real>8.4033536911010742</real>
+						<real>2.4265289306640625</real>
 					</array>
 				</array>
 			</array>

@@ -123,20 +123,20 @@
 			<key>collisionType</key>
 			<string>character</string>
 			<key>cornerRadius</key>
-			<real>26.1484375</real>
+			<real>9.21875</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>
-			<real>0.0</real>
+			<real>0.30000001192092896</real>
 			<key>friction</key>
 			<real>0.30000001192092896</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>31.61328125</real>
-					<real>30.191421508789062</real>
+					<real>9</real>
+					<real>8.5</real>
 				</array>
 			</array>
 			<key>polygons</key>
@@ -314,7 +314,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>2</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

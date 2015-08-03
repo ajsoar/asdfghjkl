@@ -44,13 +44,24 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var resumeButton: CCButton!
     weak var resumeIcon: CCSprite!
     weak var settings: CCSprite!
-    weak var settingsButton: CCButton!
+    weak var soundButton: CCButton!
     weak var shop: CCSprite!
+    
+    enum sounds {
+        case yesSound
+        case noSound
+    }
+    
+    weak var sound: CCSprite!
+    weak var mute: CCSprite!
+    
+    var state: sounds = .yesSound
+
     
     func didLoadFromCCB(){
         userInteractionEnabled = true
         pauseButton.visible = true
-        //gamePhysicsNode.debugDraw = true
+        gamePhysicsNode.debugDraw = true
         dies.append(die1)
         dies.append(die2)
         ceilings.append(ceiling1)
@@ -72,12 +83,11 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
         let character = Gamestate.sharedInstance.characterType
         var node = CCBReader.load("\(character.rawValue)") as! Character
-        node.position = ccp(100,300)
+        node.position = ccp(100, 300)
         gamePhysicsNode.removeChild(self.character)
         gamePhysicsNode.addChild(node)
         self.character = node
-        node.scaleX = 0.3
-        node.scaleY = 0.3
+
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
@@ -206,8 +216,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         retryButton.visible = true
         home.visible = true
         homeButton.visible = true
-        settings.visible = true
-        settingsButton.visible = true
+        sound.visible = true
+        soundButton.visible = true
         shop.visible = true
 
     }
@@ -222,8 +232,9 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         retryButton.visible = false
         home.visible = false
         homeButton.visible = false
-        settings.visible = false
-        settingsButton.visible = false
+        sound.visible = false
+        soundButton.visible = false
+        mute.visible = false
         shop.visible = false
     }
     
@@ -239,9 +250,29 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().presentScene(scene)
     }
     
-    func openSettings() {
-        let scene = CCBReader.loadAsScene("Settings")
-        CCDirector.sharedDirector().presentScene(scene)
+    func muting() {
+        mute.visible = true
+        sound.opacity = 0.5
+        OALSimpleAudio.sharedInstance().effectsMuted = true
+        OALSimpleAudio.sharedInstance().bgMuted = true
+    }
+    
+    func music() {
+        mute.visible = false
+        sound.opacity = 1.0
+        OALSimpleAudio.sharedInstance().effectsMuted = false
+        OALSimpleAudio.sharedInstance().bgMuted = false
+    }
+    
+    func muteAndSound() {
+        switch (state) {
+        case .yesSound:
+            music()
+            state = .noSound
+        case .noSound:
+            muting()
+            state = .yesSound
+        }
     }
     
     //starts with the gameOver thing

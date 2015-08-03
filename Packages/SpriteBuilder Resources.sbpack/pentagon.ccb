@@ -40,7 +40,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string></string>
+		<string>Character</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -74,48 +74,48 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>72.859375</real>
-					<real>51.0859375</real>
+					<real>5.6663103103637695</real>
+					<real>4.038179874420166</real>
 				</array>
 				<array>
-					<real>41.28125</real>
-					<real>152.98049926757812</real>
+					<real>2.4822759628295898</real>
+					<real>10.375286102294922</real>
 				</array>
 				<array>
-					<real>124.48046875</real>
-					<real>214.11721801757812</real>
+					<real>9.1651363372802734</real>
+					<real>14.129556655883789</real>
 				</array>
 				<array>
-					<real>209.11328125</real>
-					<real>153.73831176757812</real>
+					<real>15.533205986022949</real>
+					<real>10.826830863952637</real>
 				</array>
 				<array>
-					<real>177.95703125</real>
-					<real>52.43359375</real>
+					<real>12.640739440917969</real>
+					<real>3.4679434299468994</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>177.95703125</real>
-						<real>52.43359375</real>
+						<real>12.640739440917969</real>
+						<real>3.4679434299468994</real>
 					</array>
 					<array>
-						<real>209.11328125</real>
-						<real>153.73831176757812</real>
+						<real>15.533205986022949</real>
+						<real>10.826830863952637</real>
 					</array>
 					<array>
-						<real>124.48046875</real>
-						<real>214.11721801757812</real>
+						<real>9.1651363372802734</real>
+						<real>14.129556655883789</real>
 					</array>
 					<array>
-						<real>41.28125</real>
-						<real>152.98049926757812</real>
+						<real>2.4822759628295898</real>
+						<real>10.375286102294922</real>
 					</array>
 					<array>
-						<real>72.859375</real>
-						<real>51.0859375</real>
+						<real>5.6663103103637695</real>
+						<real>4.038179874420166</real>
 					</array>
 				</array>
 			</array>
