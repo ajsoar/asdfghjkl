@@ -41,6 +41,7 @@
 		A085F5EF1B701601000DC806 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A085F5EE1B701601000DC806 /* Default@2x.png */; };
 		A085F5F11B70160D000DC806 /* Default-568h@2x 14-08-04-886 14-33-02-146.png in Resources */ = {isa = PBXBuildFile; fileRef = A085F5F01B70160D000DC806 /* Default-568h@2x 14-08-04-886 14-33-02-146.png */; };
 		A085F5F51B701860000DC806 /* LaunchImage-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A085F5F41B701860000DC806 /* LaunchImage-3.png */; };
+		A085F5F71B71346F000DC806 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085F5F61B71346F000DC806 /* Store.swift */; };
 		A0EF40C31B62B8B500A07195 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40C21B62B8B500A07195 /* Gameplay.swift */; };
 		A0EF40C71B62D03300A07195 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40C61B62D03300A07195 /* Settings.swift */; };
 		A0EF40E71B67FF5800A07195 /* StellarDrone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40E61B67FF5800A07195 /* StellarDrone.mp3 */; };
@@ -156,6 +157,7 @@
 		A085F5EE1B701601000DC806 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A085F5F01B70160D000DC806 /* Default-568h@2x 14-08-04-886 14-33-02-146.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x 14-08-04-886 14-33-02-146.png"; sourceTree = "<group>"; };
 		A085F5F41B701860000DC806 /* LaunchImage-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-3.png"; sourceTree = "<group>"; };
+		A085F5F61B71346F000DC806 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		A0EF40C21B62B8B500A07195 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		A0EF40C61B62D03300A07195 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		A0EF40E61B67FF5800A07195 /* StellarDrone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StellarDrone.mp3; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				A0EF40C21B62B8B500A07195 /* Gameplay.swift */,
 				A0EF40F41B693F1A00A07195 /* GameOver.swift */,
+				A085F5F61B71346F000DC806 /* Store.swift */,
 				A0EF40C61B62D03300A07195 /* Settings.swift */,
 				A08155D41B5990BC00968569 /* Character.swift */,
 				A0F8626A1B54390D00840A60 /* Ledge.swift */,
@@ -769,6 +772,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				A0EF40FB1B6C25D200A07195 /* Gamestate.swift in Sources */,
+				A085F5F71B71346F000DC806 /* Store.swift in Sources */,
 				A0EF40C31B62B8B500A07195 /* Gameplay.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				A08155D51B5990BC00968569 /* Character.swift in Sources */,
