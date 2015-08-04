@@ -15,6 +15,10 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var ledgesLayer: CCNode!
     weak var die1: CCNode!
     weak var die2: CCNode!
+    weak var pause1: CCNode!
+    weak var pause2: CCNode!
+    weak var pauseActive1: CCNode!
+    weak var pauseActive2: CCNode!
     weak var ground: CCSprite!
     weak var gameplay: CCNode!
     
@@ -32,6 +36,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     let firstLedgePosition: CGFloat = 360
     let distanceBetweenLedges: CGFloat = 150
     var dies = [CCNode]()
+    var pauses = [CCNode]()
+    var yeah = [CCNode]()
     
     weak var scoreLabel: CCLabelTTF!
     
@@ -45,6 +51,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var settings: CCSprite!
     weak var soundButton: CCButton!
     weak var shop: CCSprite!
+    weak var actualPause: CCButton!
     
     enum sounds {
         case yesSound
@@ -60,14 +67,24 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     func didLoadFromCCB(){
         userInteractionEnabled = true
         pauseButton.visible = true
-        //gamePhysicsNode.debugDraw = true
+        actualPause.visible = true
+        
+        gamePhysicsNode.debugDraw = true
         dies.append(die1)
         dies.append(die2)
         ceilings.append(ceiling1)
         ceilings.append(ceiling2)
+        pauses.append(pause1)
+        pauses.append(pause2)
+        yeah.append(pauseActive1)
+        yeah.append(pauseActive2)
         
         die1.physicsBody.sensor = true
         die2.physicsBody.sensor = true
+        pause1.physicsBody.sensor = true
+        pause2.physicsBody.sensor = true
+        pauseActive1.physicsBody.sensor = true
+        pauseActive2.physicsBody.sensor = true
         
         for i in 0...4 {
             spawnNewLedge()
@@ -139,6 +156,24 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
                 ceiling.position = CGPoint(x: ceiling.position.x + scrollSpeed, y: ceiling.position.y)
             }
         }
+        
+        for pausing in pauses {
+            let pauseWorldPosition = gamePhysicsNode.convertToWorldSpace(pausing.position)
+            let pauseScreenPosition = convertToNodeSpace(pauseWorldPosition)
+            if pauseScreenPosition.x <= (-pausing.contentSize.width) {
+                pausing.position = CGPoint(x: pausing.position.x + scrollSpeed, y: pausing.position.y)
+                
+            }
+        }
+        
+        for yee in yeah {
+            let yeahWorldPosition = gamePhysicsNode.convertToWorldSpace(yee.position)
+            let yeahScreenPosition = convertToNodeSpace(yeahWorldPosition)
+            if yeahScreenPosition.x <= (-yee.contentSize.width) {
+                yee.position = CGPoint(x: yee.position.x + scrollSpeed, y: yee.position.y)
+                
+            }
+        }
     }
     
     // make a new ledge function
@@ -202,6 +237,16 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         return true
     }
     
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, noPause: CCNode!) -> Bool {
+        actualPause.visible = false
+        return true
+    }
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, yesPause: CCNode!) -> Bool {
+        actualPause.visible = true
+        return true
+    }
+    
     
     //pause game
     func pause() {
@@ -217,12 +262,14 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         sound.visible = true
         soundButton.visible = true
         shop.visible = true
+        actualPause.visible = false
 
     }
     
     func resume() {
         gameplay.paused = false
         pauseButton.visible = true
+        actualPause.visible = true
         resumeButton.visible = false
         resumeIcon.visible = false
         pausedTitle.visible = false
@@ -278,10 +325,28 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         if (gameOver == false) {
             gameOver = true
             pauseButton.visible = false
+            actualPause.visible = false
             scrollSpeed = 0
             scoreLabel.visible = false
             
             character.stopAllActions()
+            ledgesLayer.stopAllActions()
+            actualPause.stopAllActions()
+            
+            gameplay.paused = false
+            resumeButton.visible = false
+            resumeIcon.visible = false
+            pausedTitle.visible = false
+            retry.visible = false
+            retryButton.visible = false
+            home.visible = false
+            homeButton.visible = false
+            sound.visible = false
+            soundButton.visible = false
+            mute.visible = false
+            shop.visible = false
+
+            
             
             let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
             let moveBack = CCActionEaseBounceOut(action: move.reverse())
