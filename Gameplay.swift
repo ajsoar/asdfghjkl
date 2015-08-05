@@ -69,7 +69,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         pauseButton.visible = true
         actualPause.visible = true
         
-        gamePhysicsNode.debugDraw = true
+        //gamePhysicsNode.debugDraw = true
         dies.append(die1)
         dies.append(die2)
         ceilings.append(ceiling1)
