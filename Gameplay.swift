@@ -231,22 +231,22 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     }
     
 //    collision of the bottom node for game over and character to trigger the game over
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, dead: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, dead: CCNode!) -> ObjCBool {
         triggerGameOver()
         return true
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, ground: CCSprite!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, ground: CCSprite!) -> ObjCBool {
         resetJump()
         return true
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, noPause: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, noPause: CCNode!) -> ObjCBool {
         actualPause.visible = false
         return true
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, yesPause: CCNode!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, yesPause: CCNode!) -> ObjCBool {
         actualPause.visible = true
         return true
     }
