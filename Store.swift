@@ -14,4 +14,9 @@ class Store: CCNode {
         let scene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    
+    func play() {
+        let scene = CCBReader.loadAsScene("Gameplay")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Mixpanel
 
 class Settings: CCNode {
     
@@ -25,6 +26,7 @@ class Settings: CCNode {
     weak var squareForPentagon: CCSprite!
     weak var squareForStar: CCSprite!
     weak var squareForGhost: CCSprite!
+//    var mixpanel = Mixpanel()
 
     enum sounds {
         case yesSound
@@ -62,6 +64,7 @@ class Settings: CCNode {
         case .noSound:
             muting()
             state = .yesSound
+//            mixpanel.track("mute")
         }
     }
     

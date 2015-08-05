@@ -51,7 +51,10 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var settings: CCSprite!
     weak var soundButton: CCButton!
     weak var shop: CCSprite!
+    weak var shopbutton: CCButton!
     weak var actualPause: CCButton!
+    
+    var gamestate: Gamestate!
     
     enum sounds {
         case yesSound
@@ -99,6 +102,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
         let character = Gamestate.sharedInstance.characterType
         var node = CCBReader.load("\(character.rawValue)") as! Character
+        
         node.position = ccp(100, 200)
         gamePhysicsNode.removeChild(self.character)
         gamePhysicsNode.addChild(node)
@@ -262,6 +266,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         sound.visible = true
         soundButton.visible = true
         shop.visible = true
+        shopbutton.visible = true
         actualPause.visible = false
 
     }
@@ -281,6 +286,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         soundButton.visible = false
         mute.visible = false
         shop.visible = false
+        shopbutton.visible = false
     }
     
     
@@ -292,6 +298,11 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     func main() {
         let scene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
+    
+    func openShop() {
+        let scene = CCBReader.loadAsScene("Store")
         CCDirector.sharedDirector().presentScene(scene)
     }
     
@@ -345,6 +356,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             soundButton.visible = false
             mute.visible = false
             shop.visible = false
+            shopbutton.visible = false
 
             
             
