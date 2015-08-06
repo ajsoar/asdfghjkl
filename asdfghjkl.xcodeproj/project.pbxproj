@@ -52,6 +52,7 @@
 		A0EF40F71B69CE0D00A07195 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40F61B69CE0C00A07195 /* icon.png */; };
 		A0EF40F91B69D0FE00A07195 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40F81B69D0FE00A07195 /* Images.xcassets */; };
 		A0EF40FB1B6C25D200A07195 /* Gamestate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40FA1B6C25D200A07195 /* Gamestate.swift */; };
+		A0F0C5851B73D587005A3B70 /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F0C5841B73D587005A3B70 /* MKStoreKit.m */; };
 		A0F8626B1B54390D00840A60 /* Ledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8626A1B54390D00840A60 /* Ledge.swift */; };
 		B737893B180761570076A88C /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 		B73789871807631A0076A88C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
@@ -169,6 +170,8 @@
 		A0EF40F61B69CE0C00A07195 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		A0EF40F81B69D0FE00A07195 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "asdfghjkl iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		A0EF40FA1B6C25D200A07195 /* Gamestate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamestate.swift; sourceTree = "<group>"; };
+		A0F0C5831B73D56D005A3B70 /* MKStoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKStoreKit.h; sourceTree = "<group>"; };
+		A0F0C5841B73D587005A3B70 /* MKStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreKit.m; sourceTree = "<group>"; };
 		A0F8626A1B54390D00840A60 /* Ledge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ledge.swift; sourceTree = "<group>"; };
 		A429347561B0222DD1442EA7 /* Pods-asdfghjkl iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asdfghjkl iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asdfghjkl iOS/Pods-asdfghjkl iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B737893A180761570076A88C /* Published-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Published-iOS"; path = "Source/Resources/Published-iOS"; sourceTree = SOURCE_ROOT; };
@@ -426,9 +429,19 @@
 			name = libs;
 			sourceTree = "<group>";
 		};
+		A0F0C5801B73D544005A3B70 /* MKStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				A0F0C5831B73D56D005A3B70 /* MKStoreKit.h */,
+				A0F0C5841B73D587005A3B70 /* MKStoreKit.m */,
+			);
+			name = MKStoreKit;
+			sourceTree = "<group>";
+		};
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A0F0C5801B73D544005A3B70 /* MKStoreKit */,
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				A0EF40C21B62B8B500A07195 /* Gameplay.swift */,
@@ -835,6 +848,7 @@
 				A0EF40F51B693F1A00A07195 /* GameOver.swift in Sources */,
 				A0EF40C71B62D03300A07195 /* Settings.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				A0F0C5851B73D587005A3B70 /* MKStoreKit.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				A0EF40FB1B6C25D200A07195 /* Gamestate.swift in Sources */,
 				A085F5F71B71346F000DC806 /* Store.swift in Sources */,

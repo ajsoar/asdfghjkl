@@ -217,7 +217,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     }
     
     //adds score for the whenever the character jumps onto the ledge
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, ledge: Ledge!) -> Bool {
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, character: Character!, ledge: Ledge!) -> ObjCBool {
         points++
         scoreLabel.string = String(points)
         resetJump()
