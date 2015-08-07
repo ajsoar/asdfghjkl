@@ -19,4 +19,32 @@ class Store: CCNode {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    
+    func buyTriangle() {
+        
+    }
+    
+    func buySquare() {
+        
+    }
+    
+    func buyDiamond() {
+        
+    }
+    
+    func buyPentagon() {
+        
+    }
+    
+    func buyStar() {
+        
+    }
+    
+    func buyGhost() {
+        
+    }
+    
+    func buyBundle() {
+        
+    }
 }

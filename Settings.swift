@@ -26,7 +26,30 @@ class Settings: CCNode {
     weak var squareForPentagon: CCSprite!
     weak var squareForStar: CCSprite!
     weak var squareForGhost: CCSprite!
-//    var mixpanel = Mixpanel()
+    
+    var unlockCharacter: GameOver!
+    
+    weak var selectTriangleButton: CCButton!
+    weak var selectSquareButton: CCButton!
+    weak var selectDiamondButton: CCButton!
+    weak var selectPentagonButton: CCButton!
+    weak var selectStarButton: CCButton!
+    weak var selectGhostButton: CCButton!
+    
+    weak var triangleLock: CCSprite!
+    weak var squareLock: CCSprite!
+    weak var diamondLock: CCSprite!
+    weak var pentagonLock: CCSprite!
+    weak var starLock: CCSprite!
+    weak var ghostLock: CCSprite!
+    
+    weak var tenPoints: CCLabelTTF!
+    weak var twentyPoints: CCLabelTTF!
+    weak var fortyPoints: CCLabelTTF!
+    weak var eightyPoints: CCLabelTTF!
+    weak var onehundredsixtyPoints: CCLabelTTF!
+    weak var buy: CCLabelTTF!
+    
 
     enum sounds {
         case yesSound
@@ -39,7 +62,7 @@ class Settings: CCNode {
     var state: sounds = .yesSound
     
     func didLoadFromCCB() {
-        
+        unlockingCharacter()
     }
     
     func muting() {
@@ -64,7 +87,6 @@ class Settings: CCNode {
         case .noSound:
             muting()
             state = .yesSound
-//            mixpanel.track("mute")
         }
     }
     
@@ -98,10 +120,14 @@ class Settings: CCNode {
         squareForGhost.scaleY = 0.3
     }
     
-    func selectTriangle() {
-        Gamestate.sharedInstance.characterType = .Triangle
+    func playsClickSound() {
         OALSimpleAudio.sharedInstance().playEffect("open.wav")
         OALSimpleAudio.sharedInstance().effectsVolume = 0.05
+    }
+    func selectTriangle() {
+        
+        Gamestate.sharedInstance.characterType = .Triangle
+        playsClickSound()
         squareForCircle.scaleX = 0.3
         squareForCircle.scaleY = 0.3
         squareForTriangle.scaleX = 0.4
@@ -120,8 +146,7 @@ class Settings: CCNode {
     
     func selectSquare() {
         Gamestate.sharedInstance.characterType = .Square
-        OALSimpleAudio.sharedInstance().playEffect("open.wav")
-        OALSimpleAudio.sharedInstance().effectsVolume = 0.05
+        playsClickSound()
         squareForCircle.scaleX = 0.3
         squareForCircle.scaleY = 0.3
         squareForTriangle.scaleX = 0.3
@@ -140,8 +165,7 @@ class Settings: CCNode {
     
     func selectDiamond() {
         Gamestate.sharedInstance.characterType = .Diamond
-        OALSimpleAudio.sharedInstance().playEffect("open.wav")
-        OALSimpleAudio.sharedInstance().effectsVolume = 0.05
+        playsClickSound()
         squareForCircle.scaleX = 0.3
         squareForCircle.scaleY = 0.3
         squareForTriangle.scaleX = 0.3
@@ -160,8 +184,7 @@ class Settings: CCNode {
     
     func selectPentagon() {
         Gamestate.sharedInstance.characterType = .Pentagon
-        OALSimpleAudio.sharedInstance().playEffect("open.wav")
-        OALSimpleAudio.sharedInstance().effectsVolume = 0.05
+        playsClickSound()
         squareForCircle.scaleX = 0.3
         squareForCircle.scaleY = 0.3
         squareForTriangle.scaleX = 0.3
@@ -180,8 +203,7 @@ class Settings: CCNode {
     
     func selectStar() {
         Gamestate.sharedInstance.characterType = .Star
-        OALSimpleAudio.sharedInstance().playEffect("open.wav")
-        OALSimpleAudio.sharedInstance().effectsVolume = 0.05
+        playsClickSound()
         squareForCircle.scaleX = 0.3
         squareForCircle.scaleY = 0.3
         squareForTriangle.scaleX = 0.3
@@ -200,8 +222,7 @@ class Settings: CCNode {
     
     func selectGhost() {
         Gamestate.sharedInstance.characterType = .Ghost
-        OALSimpleAudio.sharedInstance().playEffect("open.wav")
-        OALSimpleAudio.sharedInstance().effectsVolume = 0.05
+        playsClickSound()
         squareForCircle.scaleX = 0.3
         squareForCircle.scaleY = 0.3
         squareForTriangle.scaleX = 0.3
@@ -219,4 +240,43 @@ class Settings: CCNode {
         
     }
     
+    func unlockingCharacter() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var bestScore = defaults.integerForKey("bestScore")
+        let unlockTriangle = 10
+        let unlockSquare = 20
+        let unlockDiamond = 40
+        let unlockPentagon = 80
+        let unlockStar = 160
+        
+        if  bestScore >= unlockTriangle {
+            selectTriangleButton.visible = true
+            triangleLock.visible = false
+            tenPoints.visible = false
+        }
+        
+        if bestScore >= unlockSquare {
+            selectSquareButton.visible = true
+            squareLock.visible = false
+            twentyPoints.visible = false
+        }
+        
+        if bestScore >= unlockDiamond {
+            selectDiamondButton.visible = true
+            diamondLock.visible = false
+            fortyPoints.visible = false
+        }
+        
+        if bestScore >= unlockPentagon {
+            selectPentagonButton.visible = true
+            pentagonLock.visible = false
+            eightyPoints.visible = false
+        }
+        
+        if bestScore >= unlockStar {
+            selectStarButton.visible = true
+            starLock.visible = false
+            onehundredsixtyPoints.visible = false
+        }
+    }
 }

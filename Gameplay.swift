@@ -380,8 +380,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         var bestScore = defaults.integerForKey("bestScore")
         if self.points > bestScore {
             defaults.setInteger(Int(self.points), forKey: "bestScore")
+
         }
-        
     }
     
 }

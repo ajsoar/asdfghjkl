@@ -53,6 +53,7 @@
 		A0EF40F91B69D0FE00A07195 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0EF40F81B69D0FE00A07195 /* Images.xcassets */; };
 		A0EF40FB1B6C25D200A07195 /* Gamestate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF40FA1B6C25D200A07195 /* Gamestate.swift */; };
 		A0F0C5851B73D587005A3B70 /* MKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F0C5841B73D587005A3B70 /* MKStoreKit.m */; };
+		A0F0C5871B73D9CA005A3B70 /* MKStoreKitConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0F0C5861B73D9CA005A3B70 /* MKStoreKitConfigs.plist */; };
 		A0F8626B1B54390D00840A60 /* Ledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F8626A1B54390D00840A60 /* Ledge.swift */; };
 		B737893B180761570076A88C /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 		B73789871807631A0076A88C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
@@ -172,6 +173,7 @@
 		A0EF40FA1B6C25D200A07195 /* Gamestate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamestate.swift; sourceTree = "<group>"; };
 		A0F0C5831B73D56D005A3B70 /* MKStoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKStoreKit.h; sourceTree = "<group>"; };
 		A0F0C5841B73D587005A3B70 /* MKStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreKit.m; sourceTree = "<group>"; };
+		A0F0C5861B73D9CA005A3B70 /* MKStoreKitConfigs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MKStoreKitConfigs.plist; sourceTree = "<group>"; };
 		A0F8626A1B54390D00840A60 /* Ledge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ledge.swift; sourceTree = "<group>"; };
 		A429347561B0222DD1442EA7 /* Pods-asdfghjkl iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asdfghjkl iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asdfghjkl iOS/Pods-asdfghjkl iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B737893A180761570076A88C /* Published-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Published-iOS"; path = "Source/Resources/Published-iOS"; sourceTree = SOURCE_ROOT; };
@@ -369,6 +371,7 @@
 		7A40366219DDF8CB007B6E8F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A0F0C5861B73D9CA005A3B70 /* MKStoreKitConfigs.plist */,
 				5B121034197485FE004C1E1D /* Info.plist */,
 			);
 			name = iOS;
@@ -716,6 +719,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A085F5EF1B701601000DC806 /* Default@2x.png in Resources */,
+				A0F0C5871B73D9CA005A3B70 /* MKStoreKitConfigs.plist in Resources */,
 				A085F5ED1B7015F5000DC806 /* Default@2x 14-08-04-844.png in Resources */,
 				A085F5E71B7015DA000DC806 /* Default-568h@2x 14-08-04-886.png in Resources */,
 				A0EF40F91B69D0FE00A07195 /* Images.xcassets in Resources */,
@@ -1079,7 +1083,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Judy Dela Cruz (RMM3GW3DPH)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1113,8 +1117,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Judy Dela Cruz (RMM3GW3DPH)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1144,7 +1148,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1184,7 +1188,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
