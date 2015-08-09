@@ -225,8 +225,6 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             ledge.runAction(CCActionMoveBy(duration: 0.5, position: ccp (0,-300)))
             }, key: ledge)
         
-        scoreLabel.visible = true
-        
         return true
     }
     

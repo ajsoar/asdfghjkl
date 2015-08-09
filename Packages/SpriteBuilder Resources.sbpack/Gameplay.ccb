@@ -521,8 +521,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1528,6 +1526,67 @@
 			<dict>
 				<key>UUID</key>
 				<integer>70</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>opacity</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>opacity</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>10</integer>
+									<key>value</key>
+									<real>1</real>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>opacity</string>
+									<key>time</key>
+									<real>1</real>
+									<key>type</key>
+									<integer>10</integer>
+									<key>value</key>
+									<real>0.30000001192092896</real>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>opacity</string>
+									<key>time</key>
+									<real>2</real>
+									<key>type</key>
+									<integer>10</integer>
+									<key>value</key>
+									<real>1</real>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>opacity</string>
+							<key>type</key>
+							<integer>10</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCLabelTTF</string>
 				<key>children</key>
@@ -1542,14 +1601,6 @@
 				<integer>1</integer>
 				<key>properties</key>
 				<array>
-					<dict>
-						<key>name</key>
-						<string>visible</string>
-						<key>type</key>
-						<string>Check</string>
-						<key>value</key>
-						<false/>
-					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
@@ -1635,25 +1686,14 @@
 						<false/>
 					</dict>
 					<dict>
+						<key>baseValue</key>
+						<real>0.5</real>
 						<key>name</key>
 						<string>opacity</string>
 						<key>type</key>
 						<string>Float</string>
 						<key>value</key>
-						<real>0.5</real>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>color</string>
-						<key>type</key>
-						<string>Color3</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<real>1</real>
-							<real>0.5</real>
-						</array>
+						<real>1</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1760,6 +1800,10 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -5258,15 +5302,15 @@
 				<integer>11</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>2</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>2</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
