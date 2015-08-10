@@ -28,6 +28,7 @@
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
 #import "Mixpanel.h"
+#import "MKStoreKit.h"
 
 
 @implementation AppController
@@ -59,6 +60,16 @@
     [self setupCocos2dWithOptions:cocos2dSetup];
     
     //[OALSimpleAudio sharedInstance];
+    [[MKStoreKit sharedKit] startProductRequest];
+    [[NSNotificationCenter defaultCenter] addObserverForName:kMKStoreKitProductsAvailableNotification
+                                                      object:nil
+                                                       queue:[[NSOperationQueue alloc] init]
+                                                  usingBlock:^(NSNotification *note) {
+                                                      
+                                                      NSLog(@"Products available: %@", [[MKStoreKit sharedKit] availableProducts]);
+                                                  }];
+    
+
     
     return YES;
 }

@@ -21,30 +21,30 @@ class Store: CCNode {
     }
     
     func buyTriangle() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpTriangle")
     }
     
     func buySquare() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpSquare")
     }
     
     func buyDiamond() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpDiamond")
     }
     
     func buyPentagon() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpPentagon")
     }
     
     func buyStar() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpStar")
     }
     
     func buyGhost() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpGhost")
     }
     
     func buyBundle() {
-        
+        MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpCharacterBundle")
     }
 }
