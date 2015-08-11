@@ -278,5 +278,6 @@ class Settings: CCNode {
             starLock.visible = false
             onehundredsixtyPoints.visible = false
         }
+        
     }
 }
