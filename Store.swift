@@ -19,7 +19,7 @@ class Store: CCNode {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)
     }
-    
+        
     func buyTriangle() {
         MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpTriangle")
     }
