@@ -50,15 +50,6 @@ class Settings: CCNode {
     weak var onehundredsixtyPoints: CCLabelTTF!
     weak var buy: CCLabelTTF!
     
-//    var boughtGhost = false
-//    var boughtTriangle = false
-//    var boughtSquare = false
-//    var boughtDiamond = false
-//    var boughtPentagon = false
-//    var boughtStar = false
-//    var boughtBundle = false
-    
-    
 
     enum sounds {
         case yesSound
@@ -78,7 +69,7 @@ class Settings: CCNode {
         boughtPentagon()
         boughtStar()
         boughtGhost()
-        //bought()
+        boughtBundle()
     }
     
     func muting() {
@@ -297,51 +288,6 @@ class Settings: CCNode {
         
     }
     
-//    func boughtCharacters() {
-//                
-//        
-//        if (boughtTriangle == false) {
-//            boughtTriangle = true
-//            selectTriangleButton.visible = true
-//            triangleLock.visible = false
-//            tenPoints.visible = false
-//        }
-//        
-//        if (boughtSquare == false) {
-//            boughtSquare = true
-//            selectSquareButton.visible = true
-//            squareLock.visible = false
-//            twentyPoints.visible = false
-//        }
-//        
-//        if (boughtDiamond == false) {
-//            boughtSquare = true
-//            selectDiamondButton.visible = true
-//            diamondLock.visible = false
-//            fortyPoints.visible = false
-//        }
-//        
-//        if (boughtPentagon == false) {
-//            boughtPentagon = true
-//            selectPentagonButton.visible = true
-//            pentagonLock.visible = false
-//            eightyPoints.visible = false
-//        }
-//        
-//        if (boughtStar == false) {
-//            boughtStar = true
-//            selectStarButton.visible = true
-//            starLock.visible = false
-//            onehundredsixtyPoints.visible = false
-//        }
-//        
-//        if (boughtGhost == false) {
-//            boughtGhost = true
-//            selectGhostButton.visible = true
-//            ghostLock.visible = false
-//            buy.visible = false
-//        }
-//    }
     
     func boughtTriangle() {
         let triangleIdentifier = "DoubleUpTriangle"
@@ -397,5 +343,31 @@ class Settings: CCNode {
             ghostLock.visible = false
             buy.visible = false
         }
+    }
+    
+    func boughtBundle() {
+        let bundleIdentifier = "DoubleUpCharacterBundle"
+        if MKStoreKit.sharedKit().isProductPurchased(bundleIdentifier) {
+            selectTriangleButton.visible = true
+            triangleLock.visible = false
+            tenPoints.visible = false
+            selectSquareButton.visible = true
+            squareLock.visible = false
+            twentyPoints.visible = false
+            selectDiamondButton.visible = true
+            diamondLock.visible = false
+            fortyPoints.visible = false
+            selectPentagonButton.visible = true
+            pentagonLock.visible = false
+            eightyPoints.visible = false
+            selectStarButton.visible = true
+            starLock.visible = false
+            onehundredsixtyPoints.visible = false
+            selectGhostButton.visible = true
+            ghostLock.visible = false
+            buy.visible = false
+
+        }
+        
     }
 }
