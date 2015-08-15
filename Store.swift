@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import StoreKit
 
 class Store: CCNode {
     
@@ -46,5 +47,12 @@ class Store: CCNode {
     
     func buyBundle() {
         MKStoreKit.sharedKit().initiatePaymentRequestForProductWithIdentifier("DoubleUpCharacterBundle")
+    }
+    
+    func restorePurchases() {
+        if SKPaymentQueue.canMakePayments() {
+            MKStoreKit.sharedKit().restorePurchases()
+    
+        }
     }
 }
